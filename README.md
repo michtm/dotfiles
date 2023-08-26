@@ -1,2 +1,2 @@
 # dotfiles
-Fichiers point
+Fichiers point (en cours de construction)
