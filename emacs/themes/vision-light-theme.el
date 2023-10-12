@@ -2,7 +2,7 @@
 
 ;;; Commentary:
 
-;; Voir nano-emacs et autothemer
+;; Voir nano-emacs
 
 ;; les commentaires sont écrits en français et en anglais, dans l'ordre de
 ;; priorité
@@ -113,7 +113,8 @@
    `(diff-context ((t (:inherit 'vision-face-faded))))
    `(diff-file-header ((t (:inherit 'vision-face-strong))))
    `(diff-header ((t (:inherit 'vision-face-faded))))
-   `(diff-refine-added ((t (:inherit '(vision-face-salient vision-face-strong)))))
+   ;; `(diff-refine-added ((t (:inherit '(vision-face-salient vision-face-strong)))))
+   `(diff-refine-added ((t (:inherit 'vision-face-salient))))
    `(diff-refine-changed ((t (:inherit 'vision-face-popout))))
    `(diff-refine-removed ((t (:inherit 'vision-face-faded :strike-through t))))
    `(diff-removed ((t (:inherit 'vision-face-faded))))
