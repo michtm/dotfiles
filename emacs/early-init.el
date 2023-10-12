@@ -12,6 +12,9 @@
 
 (setq gc-cons-threshold most-positive-fixnum)
 
+;; Désactivation des packages au démarrage
+(setq package-enable-at-startup t)
+
 ;; NOTE(mtr) Tout ce qui concerne l'interface utilisateur fera l'objet d'un
 ;; thème Emacs (nom de code: Vision)
 

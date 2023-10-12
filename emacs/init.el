@@ -7,6 +7,7 @@
 
 ;;; Code:
 
+;; Basic settings
 (setq backup-inhibited t)
 (setq custom-file (make-temp-file "emacs-custom-"))
 (setq custom-theme-directory (locate-user-emacs-file "themes"))
@@ -23,5 +24,26 @@
 
 ;; Thème clair
 (load-theme 'vision-light :no-confirm)
+
+;; Package settings
+(setq package-archives
+      '(("gnu" . "https://elpa.gnu.org/packages/")
+        ("nongnu" . "https://elpa.nongnu.org/nongnu/")
+        ("melpa" . "https://melpa.org/packages/")))
+(setq package-archive-priorities
+      '(("melpa" . 3)
+	("gnu" . 2)
+	("nongnu" . 1)))
+(package-initialize)
+
+;; Bootstrap `use-package'
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(eval-when-compile (require 'use-package))
+
+;; `markdown-mode'
+(use-package markdown-mode
+  :ensure t)
 
 ;;; init.el ends here
