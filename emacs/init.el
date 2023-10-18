@@ -8,6 +8,7 @@
 ;;; Code:
 
 ;; Basic settings
+(setq-default indent-tabs-mode nil)
 (setq backup-inhibited t)
 (setq custom-file (make-temp-file "emacs-custom-"))
 (setq custom-theme-directory (locate-user-emacs-file "themes"))
