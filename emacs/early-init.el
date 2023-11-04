@@ -25,6 +25,8 @@
 (column-number-mode)
 (global-display-line-numbers-mode 1)
 
+(global-whitespace-mode 1)
+
 ;; Désactivation de certains éléments d'interface utilisateur
 (menu-bar-mode -1)
 (scroll-bar-mode -1)

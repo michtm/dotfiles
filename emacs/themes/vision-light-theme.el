@@ -41,12 +41,12 @@
    `(bold ((t (:inherit 'vision-face-strong))))
    `(bold-italic ((t (:inherit 'vision-face-strong))))
    `(cursor ((((background light)) (:inherit 'vision-face-default :background ,vision-fg))
-	     (((background dark)) (:inherit 'vision-face-default :background ,vision-bg))))
+             (((background dark)) (:inherit 'vision-face-default :background ,vision-bg))))
    `(default ((t (:foreground ,vision-fg :background ,vision-bg :weight light))))
    `(highlight ((t (:inherit 'vision-face-subtle))))
    `(italic ((t (:inherit 'vision-face-faded))))
    `(region ((((background dark))(:inherit 'vision-face-subtle  :background ,vision-fg))
-	     (((background light))(:inherit 'vision-face-subtle :background ,vision-fg-salient))))
+             (((background light))(:inherit 'vision-face-subtle :background ,vision-fg-salient))))
    `(window-divider ((t (:foreground ,vision-bg))))
    `(window-divider-first-pixel ((t (:foreground ,vision-bg))))
    `(window-divider-last-pixel ((t (:foreground ,vision-bg))))
@@ -73,27 +73,27 @@
    `(trailing-whitespace ((t (:inherit 'vision-face-subtle))))
    ;; Mode Line and Header Line
    `(header-line ((t (:inherit 'vision-face-default
-			       :overline nil
-			       :underline nil
-			       :box `(:line-width 1 :color ,vision-bg :style nil)))))
+                               :overline nil
+                               :underline nil
+                               :box `(:line-width 1 :color ,vision-bg :style nil)))))
    `(internal-border ((t (:background ,vision-bg))))
    `(mode-line ((t (:foreground ,vision-fg
-				:background ,vision-bg
-				:overline nil
-				:underline t
-				:box nil))))
+                                :background ,vision-bg
+                                :overline nil
+                                :underline t
+                                :box nil))))
    `(mode-line-inherit ((t (:inherit mode-line))))
    ;; Custom
    `(custom-button ((t (:foreground ,vision-fg-faded
-				    :background ,vision-bg
-				    :box `(:line-width 1 :color ,vision-fg-faded :style nil)))))
+                                    :background ,vision-bg
+                                    :box `(:line-width 1 :color ,vision-fg-faded :style nil)))))
    `(custom-button-mouse ((t (:foreground ,vision-fg-faded
-					  :background ,vision-bg-subtle
-					  :box `(:line-width 1 :color ,vision-fg-faded :style nil)))))
+                                          :background ,vision-bg-subtle
+                                          :box `(:line-width 1 :color ,vision-fg-faded :style nil)))))
    `(custom-button-pressed ((t (:inherit 'vision-face-salient
-					 :foreground ,vision-bg
-					 :background ,vision-fg-salient
-					 :box `(:line-width 1 :color ,vision-fg-faded :style nil)))))
+                                         :foreground ,vision-bg
+                                         :background ,vision-fg-salient
+                                         :box `(:line-width 1 :color ,vision-fg-faded :style nil)))))
    `(custom-changed ((t (:inherit 'vision-face-salient))))
    `(custom-comment ((t (:inherit 'vision-face-faded))))
    `(custom-comment-tag ((t (:inherit 'vision-face-faded))))
@@ -129,7 +129,21 @@
    `(font-lock-type-face ((t (:inherit 'vision-face-salient))))
    `(font-lock-variable-name-face ((t (:inherit 'vision-face-strong))))
    `(font-lock-warning-face ((t (:inherit 'vision-face-popout))))
+   ;; Whitespace
+   `(whitespace-big-indent ((t (:inherit 'vision-face-faded))))
+   `(whitespace-empty ((t (:inherit 'vision-face-subtle))))
+   `(whitespace-hspace ((t (:inherit 'vision-face-faded))))
+   `(whitespace-indentation ((t (:inherit 'vision-face-faded))))
+   `(whitespace-line ((t (:foreground unspecified :background unspecified))))
+   `(whitespace-newline nil)
+   `(whitespace-space ((t (:inherit 'vision-face-faded))))
+   `(whitespace-space-after-tab ((t (:inherit 'vision-face-faded))))
+   `(whitespace-space-before-tab ((t (:inherit 'vision-face-faded))))
+   `(whitespace-tab ((t (:inherit 'vision-face-faded))))
+   `(whitespace-trailing ((t (:inherit 'vision-face-faded))))
    ))
+
+;;TODO(mtr) Ajout de `markdown-mode'
 
 (provide-theme 'vision-light)
 
