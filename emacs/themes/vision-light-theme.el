@@ -25,7 +25,7 @@
        (vision-fg-popout "#cd664d")
        (vision-fg-strong vision-fg)
        (vision-fg-salient "#635f54")
-       (vision-fg-faded "#a6a18e")
+       (vision-fg-faded "#8e8a79")
        (vision-bg-subtle "#b4af9a"))
   (custom-theme-set-faces
    'vision-light
