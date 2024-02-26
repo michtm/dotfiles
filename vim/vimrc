@@ -1,0 +1,32 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vimrc - Fichier de configuration Vim
+" Author: mtr
+" References:
+" - ':help vimrc'
+" Notes: Vim procède dans l'ordre suivant au démarrage (en anglais dans la
+" suite)
+" 1. Set the 'shell' and 'term' option
+" 2. Process the arguments
+" 3. Execute Ex commands, from environment variables and/or files (my vimrc !)
+" 4. Load the plugin scripts
+" 5. Set 'shellpipe' and 'shellredir'
+" 6. Set 'updatecount' to zero, if "-n" command argument is used
+" 7. Set binary options (see -b)
+" 8. Perform GUI initializations (see gui-init) (my gvimrc !)
+" 9. Read the viminfo file (see viminfo-file)
+" 10. Read the quickfix file
+" 11. Open all windows
+" 12. Execute startup commands
+" Organization:
+" - Options
+" - Plugins
+" - Keybindings
+" - Functions 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" source ~/.vim/runtime/01-general.vim
+source ~/.vim/scripts/01-options.vim
+" source ~/.vim/scripts/02-plugins.vim
+" source ~/.vim/scripts/03-mappings.vim
+" source ~/.vim/scripts/04-functions.vim
+
